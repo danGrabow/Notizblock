@@ -1,0 +1,129 @@
+html {
+  font-family: "Source Code Pro";
+  font-style: normal;
+
+  color: white;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+
+  height: 100px;
+  width: 100%;
+
+  background-color: rgb(53, 104, 119);
+
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+header img {
+  width: 100px;
+  height: 80px;
+}
+
+button {
+  cursor: pointer;
+  padding: 0;
+  border: none;
+}
+
+.add_note_btn {
+  background-color: rgb(35, 67, 77);
+
+  height: 21px;
+  width: 21px;
+
+  height: 100%;
+}
+.inner_btn {
+  background-color: rgb(136, 167, 167);
+}
+
+.inner_notes {
+  display: flex;
+  gap: 4px;
+  padding-bottom: 4px;
+}
+
+button img {
+  width: 21px;
+  height: 21px;
+
+  display: flex;
+  flex: 1;
+}
+
+h1 {
+  padding-top: 16px;
+  margin-bottom: 24px;
+  background-color: rgb(35, 67, 77);
+}
+
+h2 {
+  margin-bottom: 8px;
+}
+
+.main_container {
+  max-width: 1920px;
+  min-height: calc(100vh - 201px);
+  background-color: rgb(35, 67, 77);
+
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.input_area {
+  margin-bottom: 8px;
+
+  display: flex;
+  gap: 4px;
+}
+
+.notes {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  background-color: rgb(136, 167, 167);
+
+  margin-bottom: 8px;
+
+  padding-left: 4px;
+}
+
+.archive {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  background-color: rgb(136, 167, 167);
+
+  margin-bottom: 8px;
+
+  padding-left: 4px;
+}
+
+.trash {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  background-color: rgb(136, 167, 167);
+
+  margin-bottom: 8px;
+
+  padding-left: 4px;
+}
+
+footer {
+  height: 100px;
+  width: 100%;
+
+  background-color: rgb(53, 104, 119);
+}

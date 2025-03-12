@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notizblock</title>
+
+    <script src="scripts/templates.js"></script>
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/standard.css" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+  </head>
+  <body onload="renderNotes(), renderTrashNotes(), renderArchiveNotes()">
+    <header>
+      <img src="assets/img/header_logo.png" alt="" />
+    </header>
+    <div class="main_container">
+      <h1>Notizblock</h1>
+
+      <div class="input_area">
+        <input id="title_Input" type="text" placeholder="Notiztitel" />
+        <input id="note_Input" type="text" placeholder="Notiz" />
+        <button onclick="addNote()">
+          <img
+            src="assets/img/add_note.png"
+            alt="add note"
+            class="add_note_btn"
+            title="add note"
+          />
+        </button>
+      </div>
+
+      <div class="notes">
+        <h2>notes</h2>
+        <div id="content"></div>
+      </div>
+
+      <div class="archive">
+        <h2>archive</h2>
+        <div id="archive_content"></div>
+      </div>
+
+      <div class="trash">
+        <h2>trash</h2>
+        <div id="trash_content"></div>
+      </div>
+    </div>
+
+    <footer></footer>
+  </body>
+</html>
